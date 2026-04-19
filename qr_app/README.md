@@ -1,170 +1,167 @@
-# QR Pro
+# 🚀 QR Pro App
 
-A professional QR Code Scanner and Generator app built with Flutter. Scan QR codes using your device camera or generate new QR codes from text input.
+A professional **QR Code Scanner & Generator** built with Flutter.  
+Scan QR codes instantly using your device camera or generate new QR codes from text, URLs, and more.
 
-![Flutter](https://img.shields.io/badge/Flutter-3.2%2B-blue)
-![Dart](https://img.shields.io/badge/Dart-3.2%2B-blue)
-![License](https://img.shields.io/badge/License-MIT-green)
+---
 
-## Features
+## 📌 Features
 
-✨ **QR Code Generation**
-- Convert text, URLs, and other data into scannable QR codes
-- Real-time QR code preview
-- Clean and intuitive interface
+### ✨ QR Code Generation
+- Convert text, URLs, and data into QR codes  
+- Real-time preview  
+- Simple and clean interface  
 
-📱 **QR Code Scanner**
-- High-performance camera-based QR code scanner
-- Instant barcode recognition
-- Support for multiple QR code formats
-- Auto-focus and flash control
-- Camera permission handling
+### 📱 QR Code Scanner
+- High-performance camera scanning  
+- Instant recognition  
+- Supports multiple formats  
+- Auto-focus & flash control  
+- Smart permission handling  
 
-🎨 **User Experience**
-- Beautiful Material Design UI
-- Dark and Light theme support
-- Portrait orientation for optimal scanning
-- Smooth tab navigation between Scanner and Generator
-- Responsive layout for various screen sizes
+### 🎨 User Experience
+- Material Design UI  
+- Dark & Light theme support  
+- Smooth navigation (Scanner ↔ Generator)  
+- Responsive layout  
 
-## Platform Support
+---
 
-- ✅ **Android** 5.0+
-- ✅ **iOS** 12.0+
+## 🛠️ Tech Stack
 
-## Getting Started
+- **Flutter**
+- **Dart**
+- Android (Gradle) / iOS
 
-### Prerequisites
+---
 
-- Flutter SDK 3.2.0 or higher
-- Dart SDK 3.2.0 or higher
-- Android Studio / Xcode for building
+## 📱 Platform Support
 
-### Installation
+- ✅ Android 5.0+
+- ✅ iOS 12.0+
 
-1. **Clone the repository:**
+---
+
+## 🚀 Getting Started
+
+### 🔧 Prerequisites
+- Flutter SDK 3.2+
+- Dart SDK 3.2+
+- Android Studio / Xcode
+
+---
+
+### 📥 Installation
+
 ```bash
-git clone https://github.com/yourusername/qr_app.git
-cd qr_app
-```
-
-2. **Install dependencies:**
-```bash
+git clone https://github.com/AdhikariRubi466/QR-Pro-App.git
+cd QR-Pro-App/qr_app
 flutter pub get
-```
-
-3. **Run the app:**
-```bash
 flutter run
 ```
 
-## Project Structure
+---
 
-```
+## 📂 Project Structure
+
+```bash
 lib/
-├── main.dart                      # App entry point and navigation setup
+├── main.dart
 ├── screens/
-│   ├── generator_screen.dart      # QR code generation screen
-│   ├── scanner_screen.dart        # QR code scanning screen
-│   └── scanner_screen_camera.dart # Camera interface for scanning
+│   ├── generator_screen.dart
+│   ├── scanner_screen.dart
+│   └── scanner_screen_camera.dart
 ├── theme/
-│   └── app_theme.dart             # App theming and styling
-└── widgets/                       # Reusable UI components
+│   └── app_theme.dart
+└── widgets/
 ```
 
-## Dependencies
+---
 
-| Package | Version | Purpose |
-|---------|---------|---------|
-| `qr_flutter` | ^4.1.0 | QR code generation and rendering |
-| `mobile_scanner` | ^7.2.0 | Camera-based QR/Barcode scanning |
-| `permission_handler` | ^12.0.1 | Runtime camera permission handling |
-| `google_fonts` | ^8.0.2 | Inter typeface for enhanced typography |
+## 📦 Dependencies
 
-## Usage
+| Package | Purpose |
+|--------|--------|
+| qr_flutter | QR generation |
+| mobile_scanner | QR scanning |
+| permission_handler | Camera permissions |
+| google_fonts | Typography |
 
-### Generate QR Code
-1. Open the app and navigate to the **Generator** tab
-2. Enter text, URL, or any data
-3. View the generated QR code
-4. Share or save the QR code
+---
 
-### Scan QR Code
-1. Open the app and navigate to the **Scanner** tab
-2. Point your camera at a QR code
-3. The app will automatically recognize and process the code
-4. View the decoded data
+## 📸 Screenshots
 
-## Configuration
+> Add app screenshots here
 
-### Android Configuration
+---
 
-Permissions are configured in `android/app/src/main/AndroidManifest.xml`:
+## ⚙️ Configuration
+
+### Android
 ```xml
 <uses-permission android:name="android.permission.CAMERA" />
 ```
 
-### iOS Configuration
-
-Permissions are configured in `ios/Runner/Info.plist`:
+### iOS
 ```xml
 <key>NSCameraUsageDescription</key>
 <string>This app needs camera access to scan QR codes</string>
 ```
 
-## Building for Release
+---
 
-### Android APK
+## 🏗️ Build
+
+### Android
 ```bash
 flutter build apk --release
 ```
 
-### iOS App
+### iOS
 ```bash
 flutter build ios --release
 ```
 
-## Contributing
+---
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+## 🤝 Contributing
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+1. Fork the repo  
+2. Create a branch (`feature/your-feature`)  
+3. Commit changes  
+4. Push and open a Pull Request  
 
-## License
+---
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+## 🧪 Troubleshooting
 
-## Troubleshooting
+### Camera not working
+- Check permissions in device settings  
 
-### Camera Permission Denied
-- Ensure you've granted camera permissions in your device settings
-- On Android, check Settings > Apps > QR Pro > Permissions
+### QR not scanning
+- Ensure proper lighting  
+- Adjust distance and angle  
 
-### QR Code Not Scanning
-- Ensure the QR code is clearly visible
-- Try adjusting the camera angle and distance
-- Check that adequate lighting is available
+### Build issues
+```bash
+flutter clean
+flutter pub get
+```
 
-### Build Issues
-- Run `flutter clean` and `flutter pub get`
-- Ensure all platform requirements are met
-- Check Flutter and Dart versions: `flutter --version`
+---
 
-## Support
+## 📄 License
 
-For issues and questions, please open an issue on the GitHub repository.
+MIT License
 
-## Authors
+---
 
-- Your Name - [GitHub](https://github.com/yourusername)
+## 👤 Author
 
-## Acknowledgments
+**AdhikariRubi466**
 
-- Flutter team for the amazing framework
-- mobile_scanner package for efficient QR scanning
-- qr_flutter package for QR generation
-- Material Design for UI/UX guidelines
+---
+
+## ⭐ Support
+
+If you like this project, give it a ⭐ on GitHub!
